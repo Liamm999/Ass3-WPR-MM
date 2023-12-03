@@ -1,0 +1,161 @@
+@font-face {
+  font-family: Charm;
+  src: url("./fonts/Charm-Regular.ttf");
+}
+
+@font-face {
+  font-family: Irisupc;
+  src: url("./fonts/IUPCIB.ttf");
+}
+
+@font-face {
+  font-family: OptimalNoval;
+  src: url("./fonts/OptimaNovaLTProMedium.otf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #231900;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bg-purple {
+  background-color: #3d1a29;
+}
+
+.bg-gold {
+  background-color: #ebd077;
+}
+
+.bg-dark {
+  background: #231900;
+}
+
+.text-dark {
+  background: #231900;
+}
+
+.text-gold {
+  color: #ebd077;
+}
+
+header {
+  background-color: #3d1a29;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+}
+
+header > p {
+  font-family: Charm;
+  font-size: 80px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#navigation {
+  background: #231900;
+  overflow: hidden;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 130px;
+  z-index: 10;
+}
+
+.navigation-items {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 6px 10px;
+  font-size: 18px;
+  font-family: OptimalNoval;
+  color: #ebd077;
+  cursor: pointer;
+}
+
+.navigation-items:hover {
+  color: #231900;
+  background-color: #ebd077;
+}
+
+.navigation-items--highlight {
+  color: #231900;
+  background-color: #ebd077;
+}
+
+.main {
+  width: fit-content;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  justify-items: center;
+  margin: 0 auto;
+  margin-bottom: 150px;
+  gap: 18px;
+}
+
+.img-container {
+  position: relative;
+}
+
+.img-container:hover img {
+  cursor: pointer;
+  opacity: 50%;
+}
+
+.dynamic-caption {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 10%;
+  text-align: center;
+  color: #ebd077;
+}
+
+.img-container:hover .dynamic-caption {
+  cursor: pointer;
+  display: block;
+}
+
+.caption-heading {
+  font-family: OptimalNoval;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.caption-des {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.footer {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.footer-content {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: #ebd077;
+  font-size: 10px;
+  font-family: Irisupc;
+  text-transform: uppercase;
+  gap: 100px;
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Photo Gallery</title>
+</head>
+
+<body>
+    <header>
+        <img src="./images/ampersand-photography.png" alt="header logo" height="110">
+        <p class="text-gold">Ampersand Photography</p>
+    </header>
+
+    <div id="navigation">
+        <div class="navigation-items navigation-items--highlight">
+            <p class="navigation-content">GALLERY 1</p>
+        </div>
+        <div class="navigation-items">
+            <p class="navigation-content">GALLERY 2</p>
+        </div>
+        <div class="navigation-items">
+            <p class="navigation-content">GALLERY 3</p>
+        </div>
+        <div class="navigation-items">
+            <p class="navigation-content">GALLERY 4</p>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="img-container">
+            <img src="./images/image01-thumbnail.jpg"
+                alt="Thumbnail version of a photo of a sculpture of ladies gossiping">
+            <div class="dynamic-caption">
+                <p class="caption-heading">Les Chuchoteuses</p>
+                <p class="caption-des">Sculpture of ladies gossiping in Montreal</p>
+                <p class="caption-des">(Click to enlarge)</p>
+            </div>
+        </div>
+        <div class="img-container">
+            <img src="./images/image02-thumbnail.jpg"
+                alt="Thumbnail version of a macro photo showing an ant on a flower">
+            <div class="dynamic-caption">
+                <p class="caption-heading">Flower & Ant</p>
+                <p class="caption-des">To an ant, a flower is an entire world</p>
+                <p class="caption-des">(Click to enlarge)</p>
+            </div>
+        </div>
+        <div class="img-container">
+            <img src="./images/image03-thumbnail.jpg" alt="Thumbnail version of a photo showing a bee on a flower">
+            <div class="dynamic-caption">
+                <p class="caption-heading">Busy Bee</p>
+                <p class="caption-des">A bee bobbing for nectar</p>
+                <p class="caption-des">(Click to enlarge)</p>
+            </div>
+        </div>
+        <div class="img-container">
+            <img src="./images/image04-thumbnail.jpg" alt="Thumbnail version of a photo showing a bird in flight">
+            <div class="dynamic-caption">
+                <p class="caption-heading">On the Wings</p>
+                <p class="caption-des">An unknown yellow bird, mid-flight</p>
+                <p class="caption-des">(Click to enlarge)</p>
+            </div>
+        </div>
+        <div class="img-container">
+            <img src="./images/image05-thumbnail.jpg"
+                alt="Thumbnail version of a photo showing a Spiderman toy on a chair">
+            <div class="dynamic-caption">
+                <p class="caption-heading">Sad Spiderman</p>
+                <p class="caption-des">Doing whatever a spider can</p>
+                <p class="caption-des">(Click to enlarge)</p>
+            </div>
+        </div>
+        <div class="img-container">
+            <img src="./images/image06-thumbnail.jpg" alt="Thumbnail version of a photo showing a horse-and-cart toy">
+            <div class="dynamic-caption">
+                <p class="caption-heading">Horse & Cart</p>
+                <p class="caption-des">A horse-and-cart toy, ready to move out</p>
+                <p class="caption-des">(Click to enlarge)</p>
+            </div>
+        </div>
+        <div class="img-container">
+            <img src="./images/image02-thumbnail.jpg"
+                alt="Thumbnail version of a macro photo showing an ant on a flower">
+            <div class="dynamic-caption">
+                <p class="caption-heading">Flower & Ant</p>
+                <p class="caption-des">To an ant, a flower is an entire world</p>
+                <p class="caption-des">(Click to enlarge)</p>
+            </div>
+        </div>
+        <div class="img-container">
+            <img src="./images/image03-thumbnail.jpg" alt="Thumbnail version of a photo showing a bee on a flower">
+            <div class="dynamic-caption">
+                <p class="caption-heading">Busy Bee</p>
+                <p class="caption-des">A bee bobbing for nectar</p>
+                <p class="caption-des">(Click to enlarge)</p>
+            </div>
+        </div>
+        <div class="img-container">
+            <img src="./images/image01-thumbnail.jpg"
+                alt="Thumbnail version of a photo of a sculpture of ladies gossiping">
+            <div class="dynamic-caption">
+                <p class="caption-heading">Les Chuchoteuses</p>
+                <p class="caption-des">Sculpture of ladies gossiping in Montreal</p>
+                <p class="caption-des">(Click to enlarge)</p>
+            </div>
+        </div>
+        <div class="img-container">
+            <img src="./images/image06-thumbnail.jpg" alt="Thumbnail version of a photo showing a horse-and-cart toy">
+            <div class="dynamic-caption">
+                <p class="caption-heading">Horse & Cart</p>
+                <p class="caption-des">A horse-and-cart toy, ready to move out</p>
+                <p class="caption-des">(Click to enlarge)</p>
+            </div>
+        </div>
+        <div class="img-container">
+            <img src="./images/image04-thumbnail.jpg" alt="Thumbnail version of a photo showing a bird in flight">
+            <div class="dynamic-caption">
+                <p class="caption-heading">On the Wings</p>
+                <p class="caption-des">An unknown yellow bird, mid-flight</p>
+                <p class="caption-des">(Click to enlarge)</p>
+            </div>
+        </div>
+        <div class="img-container">
+            <img src="./images/image05-thumbnail.jpg"
+                alt="Thumbnail version of a photo showing a Spiderman toy on a chair">
+            <div class="dynamic-caption">
+                <p class="caption-heading">Sad Spiderman</p>
+                <p class="caption-des">Doing whatever a spider can</p>
+                <p class="caption-des">(Click to enlarge)</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer bg-purple">
+        <div class="footer-content">
+            <h2>&copy; Ampersand Photography</h2>
+            <h2>Facebook</h2>
+            <h2>Twitter</h2>
+            <h2>Instagram</h2>
+        </div>
+    </div>
+</body>
+
+<script>
+    const navbar = document.getElementById("navigation");
+    const containers = document.querySelectorAll(".img-container")
+
+    window.onscroll = function () { stickNavbar() };
+
+    const sticky = navbar.offsetTop;
+
+    function stickNavbar() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+
+    function openImage(container) {
+        const image = container.childNodes[1]
+        const imgUrl = image.getAttribute("src").replace("-thumbnail", "")
+        window.open(imgUrl)
+    }
+
+    containers.forEach((container) => {
+        container.addEventListener("click", () => {
+            openImage(container);
+        })
+    })
+</script>
+
+</html>

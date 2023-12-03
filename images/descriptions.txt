@@ -1,0 +1,46 @@
+
+---- PAGE TITLE and HEADER ----
+
+Title: Photo Gallery
+Header: Ampersand Photography
+
+---- IMAGE 1 ----
+
+Alt text: Thumbnail version of a photo of a sculpture of ladies gossiping
+Caption: Les Chuchoteuses
+Description: Sculpture of ladies gossiping in Montreal
+
+---- IMAGE 2 ----
+
+Alt text: Thumbnail version of a macro photo showing an ant on a flower
+Caption: Flower & Ant
+Description: To an ant, a flower is an entire world
+
+---- IMAGE 3 ----
+
+Alt text: Thumbnail version of a photo showing a bee on a flower
+Caption: Busy Bee
+Description: A bee bobbing for nectar
+
+---- IMAGE 4 ----
+
+Alt text: Thumbnail version of a photo showing a bird in flight
+Caption: On the Wing
+Description: An unknown yellow bird, mid-flight
+
+---- IMAGE 5 ----
+
+Alt text: Thumbnail version of a photo showing a Spiderman toy on a chair
+Caption: Sad Spiderman
+Description: Doing whatever a spider can
+
+---- IMAGE 6 ----
+
+Alt text: Thumbnail version of a photo showing a horse-and-cart toy
+Caption: Horse & Cart
+Description: A horse-and-cart toy, ready to move out
+
+
+---- FOOTER TEXT ----
+
+&copy; Ampersand Photography  Facebook  Twitter  Instagram
