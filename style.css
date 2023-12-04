@@ -4,8 +4,8 @@
 }
 
 @font-face {
-  font-family: Irisupc;
-  src: url("./fonts/IUPCIB.ttf");
+  font-family: Iris;
+  src: url("./fonts/IrisUPC-Regular.ttf");
 }
 
 @font-face {
@@ -154,9 +154,9 @@ header > p {
   justify-content: center;
   align-items: center;
   color: #ebd077;
-  font-size: 18px;
+  font-size: 26px;
   font-weight: 400;
-  font-family: OptimalNoval;
+  font-family: Iris;
   text-transform: uppercase;
   gap: 100px;
 }
