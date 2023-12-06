@@ -176,7 +176,10 @@
 
             if (index === galleryIndex - 1) {
                 button.classList.add("navigation-items--highlight")
-            } else {
+            } else if (!galleryIndex) {
+                buttons[0].classList.add("navigation-items--highlight")
+            }
+            else {
                 button.classList.remove("navigation-items--highlight")
             }
 
