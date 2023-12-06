@@ -15,21 +15,21 @@
     </header>
 
     <div id="navigation">
-        <div class="navigation-items navigation-items--highlight">
+        <button class="navigation-items navigation-items--highlight">
             <p class="navigation-content">GALLERY 1</p>
-        </div>
-        <div class="navigation-items">
+        </button>
+        <button class="navigation-items">
             <p class="navigation-content">GALLERY 2</p>
-        </div>
-        <div class="navigation-items">
+        </button>
+        <button class="navigation-items">
             <p class="navigation-content">GALLERY 3</p>
-        </div>
-        <div class="navigation-items">
+        </button>
+        <button class="navigation-items">
             <p class="navigation-content">GALLERY 4</p>
-        </div>
+        </button>
     </div>
 
-    <div class="main">
+    <div id="main1">
         <div class="img-container">
             <img src="./images/image01-thumbnail.jpg"
                 alt="Thumbnail version of a photo of a sculpture of ladies gossiping">
@@ -132,6 +132,9 @@
                 <p class="caption-des">(Click to enlarge)</p>
             </div>
         </div>
+    </div>
+    <div id="main2">
+        <h1>Nothing to show</h1>
     </div>
 
     <div class="footer bg-purple">
@@ -147,6 +150,9 @@
 <script>
     const navbar = document.getElementById("navigation");
     const containers = document.querySelectorAll(".img-container")
+    const main1 = document.getElementById("main1");
+    const main2 = document.getElementById("main2")
+    const buttons = document.querySelectorAll(".navigation-items")
 
     window.onscroll = function () { stickNavbar() };
 
@@ -160,6 +166,29 @@
         }
     }
 
+    function switchGallery() {
+        buttons.forEach((button, index) => {
+            button.addEventListener("click", () => {
+                window.location.replace(`?gallery=${index + 1}`);
+            })
+
+            const galleryIndex = window.location.search.replace("?gallery=", "")
+
+            if (index === galleryIndex - 1) {
+                button.classList.add("navigation-items--highlight")
+            } else {
+                button.classList.remove("navigation-items--highlight")
+            }
+
+            if (galleryIndex === 1) {
+                main1.style.display = "grid"
+            } else if (galleryIndex > 1) {
+                main1.style.display = "none"
+                main2.style.display = "flex"
+            }
+        })
+    }
+
     function openImage(container) {
         const image = container.childNodes[1]
         const imgUrl = image.getAttribute("src").replace("-thumbnail", "")
@@ -171,6 +200,8 @@
             openImage(container);
         })
     })
+
+    switchGallery()
 </script>
 
 </html>
